@@ -44,7 +44,7 @@ namespace PetManager {
         private void btnAddPet_Click(object sender, EventArgs e) {
             if (this.dgvPerson.SelectedRows.Count > 0) {
                 var person = (Person)this.dgvPerson.SelectedRows[0].DataBoundItem;
-                person.Pets.Add(new Pet());
+                person.Pets.Add(new Pet(new DateTime(1994, 7, 9)));
             } else {
                 MessageBox.Show("You have to select a person first.", "Add pet", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
