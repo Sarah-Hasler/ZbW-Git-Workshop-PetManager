@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PetManager {
-    public partial class StatisticForm : Form {
-        public StatisticForm(ICollection<Person> persons) {
+    public partial class StatisticsForm : Form {
+        public StatisticsForm(ICollection<Person> persons) {
             InitializeComponent();
 
             var avg = 0m;

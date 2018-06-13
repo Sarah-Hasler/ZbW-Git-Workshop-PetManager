@@ -1,5 +1,5 @@
 ﻿namespace PetManager {
-    partial class StatisticForm {
+    partial class StatisticsForm {
         /// <summary>
         /// Required designer variable.
         /// </summary>
