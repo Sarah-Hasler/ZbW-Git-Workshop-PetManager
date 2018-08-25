@@ -19,5 +19,14 @@ namespace PetManager {
         public TimeSpan Age() {
             return DateTime.Today - this.Birthday;
         }
+
+        public override bool Equals(object obj) {
+            if (!(obj is Pet)) {
+                return object.Equals(obj, this);
+            }
+            var pet = (Pet)obj;
+            return string.Equals(this.Name, pet.Name) && Birthday.Equals(pet.Birthday) &&
+                   string.Equals(this.Breed, pet.Breed);
+        }
     }
 }
